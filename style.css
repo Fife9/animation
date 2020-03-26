@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 3vmin;
+  grid-row-gap: 1vmin;
+  padding: 2px 5vmin 2px 5vmin;
+}
+
+.banner > img {
+  width: 100%;
+}
+h1, h3, h5 {
+  font-family: sans-serif;
+}
+h2, h4, h6 {
+  font-family: serif;
+}
+h1, h4{
+  animation: redText 2s infinite;
+}
+h2, h5{
+  animation: yellowText 2s infinite;
+}
+h3, h6{
+  animation: greenText 2s infinite;
+}
+h1:hover{
+  color: white;
+  background-color: black;
+}
+h2:hover{
+  color: blue;
+  background-color: red;
+}
+h3:hover{
+  color: purple;
+  background-color: brown;
+}
+h4:hover{
+  color: aqua;
+  background-color: yellow;
+}
+h5:hover{
+  color: white;
+  background-color: green;
+}
+h6:hover{
+  color: white;
+  background-color: blue;
+}
+h2 {
+  color: red;
+  background-color: black;
+}
+
+h3 {
+  background-color: blue;
+}
+h4 {
+  background-color: pink;
+  color: green;
+}
+h6 {
+  background-color: yellow;
+  color: red;
+}
+
+.item-2x {
+  grid-column-end: span 2;
+}
+
+.item-4x {
+  grid-column-end: span 4;
+}
+
+.item-6x {
+  grid-column-end: span 8;
+}
+@keyframes redText {
+  0%{     color:blue;   }
+  49%{    color:blue;   }
+  50%{    color:red;    }
+  99%{    color:red;    }
+  100%{   color:blue;    }
+
+}
+@keyframes yellowText {
+  0%{     color:black;  }
+  49%{    color:black;   }
+  50%{    color:yellow;    }
+  99%{    color:yellow;    }
+  100%{   color:black;    }
+
+}
+@keyframes greenText {
+  0%{     color:green;  }
+  49%{    color:green;   }
+  50%{    color:purple;    }
+  99%{    color:purple;    }
+  100%{   color:green;    }
+
+}
